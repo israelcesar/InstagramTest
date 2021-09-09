@@ -69,6 +69,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    border: 1px solid lightgray;
     overflow: hidden;
 }
 
@@ -125,4 +126,34 @@ body {
 
 .app-download:nth-child(2) {
     background-image: url(/img/googleplay-button.png);
+}
+
+/* media queries */
+
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    .instagram-phone {
+        display: none;
+    }
+
+    .instagram-login {
+        width: 100%;
+    }
+
+    .group {
+        border: 1px solid transparent;
+    }
 }
